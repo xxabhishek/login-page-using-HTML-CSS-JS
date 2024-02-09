@@ -1,0 +1,27 @@
+ <div class="container">
+        <div class="login-card">
+          <h2>Login</h2><br><br><br>
+          <div>
+            <img src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Facebook_2_glyph_svg-1024.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Twitter_glyph_svg-1024.png"><br><br>
+            <br>
+            <p>or use your account !</p>
+          </div>
+          <form>
+            <input type="text" name="username" placeholder="Enter Username Here" id="username">
+            <span style="color: red; font-size: 20px;" id="usernameVal"></span>
+            <div style="position: relative;"> <!-- Added a container for password input and toggle -->
+              <input type="password" name="password" placeholder="Enter Password Here" id="password">
+              <span class="toggle-password" onclick="togglePasswordVisibility()">👁️</span>
+            </div>
+            <span style="color: red; font-size: 20px;" id="passwordVal"></span>
+            <p><a href="#">Forget your Password ?</a></p>
+            <p>LOG IN WITH</p>
+            <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1">Gmail</a>
+            <a href="https://www.facebook.com/login/">Facebook</a>
+           <br><br>
+            <button type="button" onclick="validation()" onkeyup="validation()">Log in</button>
+            <button type="Add" style="margin-left: 50%;" class="valid">Reset</button>
+          </form>
+        </div>
+    </div>
